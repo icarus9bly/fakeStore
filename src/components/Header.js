@@ -22,11 +22,13 @@ const Header = () => {
     >
       <div className="container mx-auto my-2 flex items-center justify-between h-full">
         <Link to={"/"}>
-          <div>FakeStore</div>
+          <div className="text-xl font-bold capitalize text-white mb-1">
+            FakeStore
+          </div>
         </Link>
         <div
           onClick={() => setIsOpen(!isOpen)}
-          className="cursor-pointer flex relative"
+          className="cursor-pointer flex relative text-md font-bold capitalize text-white mb-1"
         >
           <BsBag className="text-2xl" />
           <div>{itemAmount}</div>
